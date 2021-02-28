@@ -1,0 +1,863 @@
+
+
+
+<script type="text/javascript" src="https://yja.github.io/YJA/assets/admin/plugins/jquery/jquery-2.2.3.min.js"></script>
+<script>
+$(document).ready(function() {
+    var topVal = ($("#video").height() / 2) - 60
+    $(".title").css({top: topVal});
+    $("#title1").delay(2000).fadeIn(function() {
+        $("#title1").delay(6000).fadeOut(function() {
+            $("#title2").delay(1000).fadeIn(function() {
+                $("#title2").delay(6000).fadeOut(function() {
+                    $("#title3").delay(1000).fadeIn(function() {
+                        $("#title3").delay(6500).fadeOut(function() {
+                            $("#title4").delay(1000).fadeIn(function() {
+                                $("#title4").delay(5500).fadeOut(function() {
+                                    $("#title5").delay(1000).fadeIn(function() {
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+})
+</script>
+
+<style>
+h1, h3 {
+    text-align: center;
+    color: white !important;
+}
+h1 {
+    font-size: 56px !important;
+    font-weight: 500 !important;
+    padding-top:20px !important;
+    margin-bottom: 0px !important;
+    line-height: 70px !important;
+}
+h3 {
+    font-family: 'Light' !important;
+    font-size: 30px !important;
+}
+
+.abouth {
+  font-family: 'Light' !important;
+    font-size: 30px !important;
+}
+p {
+    color: rgba(255,255,255,0.9);
+    padding: 0px 40px 0px 40px !important;
+    font-size: 16px;
+}
+
+.video-container {
+    overflow:hidden;
+    display:block;
+    width: 100%;
+    max-height: 75%;
+    background-color: white;
+    opacity: 0.35;
+}
+
+@media (max-width: 991px) {
+    .video-container {
+        margin-top: 60px;
+    }
+}
+
+video {
+    width: 100%;
+}
+.title {
+    position:absolute;
+    left: 15%;
+    width: 70%;
+    color: #1993d4;
+    font-size:60px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 500;
+}
+span {
+    font-family: 'Savoye LET';
+    font-size: 80px;
+    font-weight: 550;
+}
+.mission {
+    width: 100%;
+    height: 500px;
+    background-color: #1993d4;
+    position: relative;
+}
+.action {
+    width: 100%;
+    min-height: 600px;
+    background-color: #1993d4;
+    position: relative;
+}
+.action-icon {
+    max-height: 200px;
+    margin: 65px 0px 30px 0px;
+    opacity: 0.9;
+}
+.slide-button {
+    color: rgba(255,255,255,0.9);
+    border-color: rgba(255,255,255,0.9);
+    border: 2px solid;
+    transition: 0.75s;
+    line-height: 1;
+    max-width: 150px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.slide-button:hover,
+.slide-button:focus {
+    box-shadow: inset 150px 0 0 0 #f58b83;
+    border-color: #f58b83;
+}
+</style>
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="csrf-token" content="CqLV9MdQ7tBSDukHuAHaRg1pm11wb6zGDkxvQWaN">
+	<title>Onex Technology | Home</title>
+    <meta
+        content="Young Jains of America (YJA) is a non-profit religious organization that is an entity of Federation of the Jain Associations in North America (JAINA)"
+        name="description">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://www.flaticon.com/svg/vstatic/svg/900/900618.svg?token=exp=1612663880~hmac=5c6d923a17a9b7c07e090b4c82244665">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://www.flaticon.com/svg/vstatic/svg/900/900618.svg?token=exp=1612663880~hmac=5c6d923a17a9b7c07e090b4c82244665">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.flaticon.com/svg/vstatic/svg/900/900618.svg?token=exp=1612663880~hmac=5c6d923a17a9b7c07e090b4c82244665">
+    <link rel="manifest" href="https://yja.github.io/admin_yja/assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!-- WEB FONTS -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext"
+		rel="stylesheet" type="text/css" />
+	<!-- CORE CSS -->
+	<link href="https://yja.github.io/new_yja/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://yja.github.io/new_yja/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="https://yja.github.io/admin_yja/css/essentials.css" rel="stylesheet" type="text/css" />
+	<!-- PAGE LEVEL STYLES -->
+	<script type="text/javascript" src="https://yja.github.io/YJA/assets/admin/plugins/jquery/jquery-2.2.3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<!-- TAG SELECT SCRIPTS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+  <script src="https://kit.fontawesome.com/ea24998409.js" crossorigin="anonymous"></script>
+	<script src="https://yja.github.io/new_yja/assets/js/bootstrap-select.js"></script>
+	<script src="https://yja.github.io/new_yja/assets/js/bootstrap.min.js"></script>
+
+    <!-- to add any page specific scripts, add them in the page blade file using -->
+    </head>
+<body>
+  <header id="header">
+		<div class="container">
+			<div id="logo" class="pull-left">
+				<a href="#" class="scrollto"><h4 class="logotext"><img src="https://www.flaticon.com/svg/vstatic/svg/900/900618.svg?token=exp=1612663880~hmac=5c6d923a17a9b7c07e090b4c82244665" width="30px"> ONEX TECHNOLOGY</h4></a>
+			</div>
+
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#clients">Clients</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav><!-- #nav-menu-container -->
+		</div>
+	</header><!-- End Header -->
+
+<style>
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden !important;
+}
+
+a {
+  color: #1993d4;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #1993d4;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #1993d4;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+input {
+  line-height: 20px;
+  font-size: 11px;
+  margin-top: 5px !important;
+  border-radius: 20px;
+  border-color: #1993d4;
+  border: 2px solid;
+  padding-left: 5px !important;
+  width: 130px;
+  color: #1993d4;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+@media (max-width: 991px) {
+  #header {
+	  background: #262626;
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 1199px) {
+  #header .container {
+    max-width: 100%;
+  }
+}
+
+#header.header-scrolled, #header.header-fixed {
+  background: #262626;
+  height: 70px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 60px;
+}
+
+.logotext {
+    color: #1993d4;
+    font-size:30px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+
+
+.pull-left {
+    float: left!important;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #1993d4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  outline: none;
+}
+
+.nav-menu a:hover {
+  color: #1993d4 !important;
+}
+.nav-menu a.white-hover:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-menu .menu-active a, .nav-menu a:hover {
+  color: #1993d4;
+}
+
+.nav-menu > li {
+  margin-left: 8px;
+}
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #1993d4;
+  visibility: hidden;
+  transition: all 
+  0.3s ease-in-out 0s;
+}
+
+.nav-menu > li > a.white-line:before {
+  background-color: #fff !important;
+}
+
+.nav-menu > li > a.blue-line:before {
+  background-color: #1993d4 !important;
+}
+
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+  border-radius: 3px;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #060c22;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+  border-radius: 3px;
+}
+
+.nav-menu ul li:hover > a {
+  background: #f82249;
+  color: #fff;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 15px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(6, 12, 34, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #f82249;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #f82249;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #f82249;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(6, 12, 34, 0.8);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+</style>
+
+<script>
+  function showSearch() {
+    $("#search_box").show("slide");
+    $("#searchIcon").hide();
+    $("#closeIcon").show();
+  }
+
+  function closeSearch() {
+    $("#search_box").hide("slide");
+    $("#searchIcon").show();
+    $("#closeIcon").hide();
+  }
+
+	!(function($) {
+  "use strict";
+
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // Header fixed on scroll
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $("#logo_img").css({'max-height': "40px"});
+      $("#logo_img").attr("src","https://yja.github.io/new_yja/assets/images/logo-wide-white@2x.png");
+      $(".nav-menu a").css({'color': 'rgba(255, 255, 255, 0.6)'});
+      $(".navbar-icon").css({'color': '#fff'});
+      $(".nav-menu a").addClass('white-hover');
+      $(".nav-menu > li > a").removeClass('blue-line');
+      $(".nav-menu > li > a").addClass('white-line');
+      $(".menu-active a").css({'color': '#fff'});
+      $('#header').addClass('header-scrolled');
+    } else {
+      $("#logo_img").css({'max-height': "60px"});
+      $("#logo_img").attr("src","https://yja.github.io/new_yja/assets/images/logo.png");
+      $(".nav-menu a").css({'color': 'rgba(40, 83, 107, 0.5)'});
+      $(".navbar-icon").css({'color': '#28536b'});
+      $(".nav-menu a").removeClass('white-hover');
+      $(".nav-menu > li > a").removeClass('white-line');
+      $(".nav-menu > li > a").addClass('blue-line');
+      $(".menu-active a").css({'color': '#28536b'});
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
+  if ($(window).scrollTop() > 200) {
+    $('#header').addClass('header-scrolled');
+  }
+
+  // Mobile Navigation
+  if ($('#nav-menu-container').length) {
+    var $mobile_nav = $('#nav-menu-container').clone().prop({
+      id: 'mobile-nav'
+    });
+    $mobile_nav.find('> ul').attr({
+      'class': '',
+      'id': ''
+    });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+    $('body').append('<div id="mobile-body-overly"></div>');
+    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+
+    $(document).on('click', '.menu-has-children i', function(e) {
+      $(this).next().toggleClass('menu-item-active');
+      $(this).nextAll('ul').eq(0).slideToggle();
+      $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    });
+
+    $(document).on('click', '#mobile-nav-toggle', function(e) {
+      $('body').toggleClass('mobile-nav-active');
+      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+      $('#mobile-body-overly').toggle();
+    });
+
+    $(document).click(function(e) {
+      var container = $("#mobile-nav, #mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('#mobile-body-overly').fadeOut();
+        }
+      }
+    });
+  } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
+    $("#mobile-nav, #mobile-nav-toggle").hide();
+  }
+
+  // Smooth scroll for the navigation menu and links with .scrollto classes
+  var scrolltoOffset = $('#header').outerHeight() - 21;
+  if (window.matchMedia("(max-width: 991px)").matches) {
+    scrolltoOffset += 20;
+  }
+  $(document).on('click', '.nav-menu a, #mobile-nav a, .scrollto', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
+
+        var scrollto = target.offset().top - scrolltoOffset;
+
+        if ($(this).attr("href") == '#header') {
+          scrollto = 0;
+        }
+
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+
+        if ($(this).parents('.nav-menu').length) {
+          $('.nav-menu .menu-active').removeClass('menu-active');
+          $(this).closest('li').addClass('menu-active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('#mobile-body-overly').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
+
+  // Activate smooth scroll on page load with hash links in the url
+  $(document).ready(function() {
+    if (window.location.hash) {
+      var initial_nav = window.location.hash;
+      if ($(initial_nav).length) {
+        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+    }
+  });
+
+  // Navigation active state on scroll
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu, #mobile-nav');
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('menu-active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('menu-active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu li:first").addClass('menu-active');
+      }
+    });
+  });
+
+})(jQuery);
+</script><div class="video-container" id="video">
+    <video autoplay loop muted>
+        <source src="https://dm0qx8t0i9gc9.cloudfront.net/previews/video/eeIr1Cv/videoblocks-sunset-time-lapse-of-downtown-chicago-day-transitions-to-night_rgbde7ywkn__d4152273ce72246e3d0489d86461f6d5__P360.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="title1" class="title" style="display:none;">WE<span> are a</span> 501 (c)(3) NON-PROFIT</div>
+<div id="title2" class="title" style="display:none;">WE<span> empower</span> NON-PROFITS & SMALL BUSINESSES</div>
+<div id="title3" class="title" style="display:none;">WE<span> bring</span> DIGITAL PRESENCES</div>
+<div id="title4" class="title" style="display:none;">WE<span> are</span> FAMILY</div>
+<div id="title5" class="title" style="display:none;">WE<span> are one</span> COMMUNITY</div>
+<div class="mission">
+    <h1>OUR MISSION</h1>
+    <h3>To empower small businesses and non-profit organizations by creating their digital presence.</h3>
+    <br>
+    <h1>
+      OUR STORY
+    </h1>
+</div>
+<img style="position:relative;margin-top:15px;margin-bottom:15px;width:100%;" src="https://yja.github.io/new_yja/assets/images/home/y_group.png"></img>  
+<img style="position:relative;width:100%;margin-top:15px;margin-bottom:15px;" src="https://yja.github.io/new_yja/assets/images/home/j_group.png"></img>
+<img style="position:relative;width:100%;margin-top:15px;margin-bottom:15px;" src="https://yja.github.io/new_yja/assets/images/home/a_group.png"></img>
+<section id="clients">
+<div class="action">
+    <div class="row">
+        <div class="col-md-1"></div> 
+        <div class="col-md-5 text-center">
+            <img class="action-icon" src="https://yja.github.io/new_yja/assets/images/home/join_icon.png"></img>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus. Ullamcorper dignissim cras tincidunt lobortis feugiat.
+            </p>
+            <button class="slide-button">Join</button>
+        </div>
+        <div class="col-md-5 text-center">
+            <img class="action-icon" src="https://yja.github.io/new_yja/assets/images/home/donate_icon.png"></img>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Orci dapibus ultrices in iaculis nunc sed augue lacus. Ullamcorper dignissim cras tincidunt lobortis feugiat.
+            </p>
+            <button class="slide-button">Donate</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="footer">
+			<div class="row" style="width: 100%"> 
+				<div class="col-md-1" style="width: 5%;"></div>
+				<div class="col-md-1" style="width: 12%;">
+					<h3 class="footer-h3">About Us</h3>
+					<div class="footer-p">Leadership</div>
+					<div class="footer-p">History</div>
+					<div class="footer-p">Partnerships</div>
+				</div>
+				<div class="col-md-1" style="width: 12%;">
+					<h3 class="footer-h3">Get Involved</h3>
+					<div class="footer-p">Join</div>
+					<div class="footer-p">Leadership Positions</div>
+				</div>
+				<div class="col-md-1" style="width: 12%;">
+					<h3 class="footer-h3">Media</h3>
+					<div class="footer-p">Photos & Videos</div>
+					<div class="footer-p">Newsletters</div>
+					<div class="footer-p">Publications</div>
+				</div>
+				<div class="col-md-1" style="width: 12%;">
+					<h3 class="footer-h3">Contact Us</h3>
+					<div class="footer-p">info@yja.org</div>
+					<div class="footer-p">Social Media</div>
+				</div>
+				<div class="col-md-4" style="width: 22%;"></div>
+				<div class="col-md-3" style="padding-top:20px;">
+					<a class="footer-icon" href="https://facebook.com/youngjains" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a class="footer-icon" href="https://instagram.com/youngjainsofamerica" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a class="footer-icon" href="https://twitter.com/yjatweets" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="footer-icon" href="https://www.snapchat.com/add/theyoungjains" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
+					<a class="footer-icon" href="https://www.linkedin.com/company/young-jains-of-america/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a class="footer-icon" href="https://www.youtube.com/YoungJainsofAmerica" target="_blank"><i class="fa fa-youtube"></i></a>
+					<a class="footer-icon" href="https://medium.com/@YoungJains" target="_blank"><i class="fa fa-medium"></i></a>
+					<a class="footer-icon" href="http://photos.yja.org" target="_blank"><i class="fa fa-camera"></i></a>
+					</br>
+					<p class="text-white font-11 p-0" style="margin-top:20px; color: rgba(255,255,255,0.8);">
+						Young Jains of America is an entity of the <a class="text-white" href="https://jaina.org"><i>Federation of Jain Associations in North America</i></a>, a non-profit
+              			tax-exempt organization (IRS Code Section 501 (c)(3)). 
+					</p>
+			  		<p class="text-white font-11 m-0 p-0" style="color: rgba(255,255,255,0.8);">
+            			Copyright &copy;2021 Onex Technology. All Rights Reserved.<br>
+          			</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+.footer {
+	min-height: 200px;
+	width: 100%;
+	background: #262626;
+}
+.footer-icon {
+	max-width:7px;
+	margin-left: 10px;
+	color: rgba(255,255,255,0.8);
+}
+.font-11 {
+	font-size: 11px;
+}
+.m-0 {
+	margin: 0px !important;
+}
+.p-0 {
+	padding: 0px;
+}
+.footer-h3 {
+	font-family: "Open Sans", sans-serif !important;
+	font-size: 16px !important;
+	margin-top:20px;
+	text-align: left;
+	font-weight: 550 !important;
+	margin-bottom: 0px!important;
+	color: rgba(255,255,255,0.85) !important;
+}
+.footer-p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	margin-top:3px;
+	margin-bottom: 0px;
+	text-align: left;
+	font-weight: 500;
+	color: rgba(255,255,255,0.85);
+}
+</style>

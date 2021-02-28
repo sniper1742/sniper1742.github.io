@@ -1,0 +1,332 @@
+/** Copyright Onex Technology 2021 **/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@font-face {
+    font-family: Headings;
+    src: url(Headings.woff2);
+  }
+  
+  @font-face {
+    font-family: Light;
+    src: url(Light.woff2);
+  }
+  
+  @font-face {
+    font-family: Medium;
+    src: url(Medium.woff2);
+  }
+  
+  @font-face {
+    font-family: Regular;
+    src: url(Regular.woff2);
+  }
+
+  /*** Works on common browsers ***/
+::selection {
+    background-color: #f15b0a;
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #f15b0a;
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #f15b0a;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #f15b0a;
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #f15b0a;
+    color: #fff;
+}
+
+.navthing {
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.logo {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.navlinkthing {
+    font-family: Light;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navlinkthing:hover {
+    font-family: Light;
+    font-size: 30px;
+    text-decoration: none;
+    text-decoration: none;
+    color: #f15b0a;
+}
+
+.heroandnav {
+    background-color: #428eeb;
+}
+
+#herovid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 0%;
+  }
+
+@media (max-width: 991px) {
+    .video-container {
+        margin-top: 60px;
+    }
+}
+
+video {
+    width: 100%;
+}
+
+.video-container {
+    overflow:hidden;
+    display:block;
+    width: 100%;
+    max-height: 75%;
+    background-color: white;
+    opacity: 0.35;
+}
+
+.title {
+    position:absolute;
+    font-family: Light;
+    left: 15%;
+    width: 70%;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 500;
+}
+
+.justheroback {
+    background-image: url(heroback.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.herowithback {
+    margin-left: 35px;
+    margin-right: 35px;
+    
+
+}
+
+.herofour {
+    color: white;
+    font-family: Regular;
+    font-size: 75px;
+    opacity: none;
+    filter: brightness(100%);
+}
+
+.heroone {
+    color: white;
+    font-family: Medium;
+    font-size: 100px;
+    opacity: none;
+    filter: brightness(100%);
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.downscroll {
+    text-decoration: underline solid 2px white;
+    color: white;
+    transition: 0.3s;
+    font-size: 25px;
+    text-underline-offset: 6px;
+}
+
+.downscroll:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.servicebody {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 15px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #428eeb;
+    color: white;
+    font-family: Light;
+    transform: rotateY(180deg);
+  }
+
+  .icard {
+      fill: white;
+      color: white;
+      width: 30px;
+      height: 30px;
+      
+  }
+
+  .filpcardone {
+      color: white;
+      font-family: Medium;
+      font-size: 50px;
+  }
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+    transition: 0.3s;
+  }
+
+.sertocontbutton {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    background-color: #f15b0a;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2);
+    border-color: #f15b0a;
+    font-family: Medium;
+}
+
+.sertocontbutton:hover {
+    width: 150px;
+    text-decoration: underline 2px solid white;
+    color: white;
+    background-color: #428eeb;
+    border-color: #428eeb;
+    font-family: Medium;
+    text-underline-offset: 3px;
+}
+
+.withback {
+    background-color: #dee5e9;
+    border-color: 5px wavy #dee5e9;
+}
+
+.serviceheader {
+    color: white; 
+    font-family: Medium; 
+    font-size: 60px; 
+    background-color: #f15b0a;
+    border-radius: 5px;
+
+}
+
+.aboutbody {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutsubhead {
+    font-family: Regular;
+    font-size: 35px;
+}
+
+.aboutsubpara {
+    font-family: Light;
+    font-size: 20px;
+}
+
+.abouttocontbutton {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    background-color: #f15b0a;
+    border-color: #f15b0a;
+    font-family: Medium;
+}
+
+.abouttocontbutton:hover {
+    width: 150px;
+    text-decoration: underline 2px solid white;
+    color: white;
+    background-color: #428eeb;
+    border-color: #428eeb;
+    font-family: Medium;
+    text-underline-offset: 3px;
+}
+
+.clientsbody {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    background-color: #428eeb;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 75px;
+}
